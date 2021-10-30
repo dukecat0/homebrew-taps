@@ -2,9 +2,7 @@ require "formula"
 
 class Volume < Formula
     homepage "https://github.com/meowmeowmeowcat/volume"
-    url "https://github.com/meowmeowmeowcat/volume.git",
-        :using => :git,
-        :tag => "v0.0.1"
+    url "https://github.com/meowmeowmeowcat/volume/releases/download/v0.0.1/volume",
     head "https://github.com/meowmeowmeowcat/volume.git"
 
     def install
@@ -12,6 +10,6 @@ class Volume < Formula
     end
 
     test do
-        system "volume"
+        system "#{bin}/volume"
     end
 end
