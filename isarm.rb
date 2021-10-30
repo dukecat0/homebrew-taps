@@ -1,6 +1,6 @@
 require "formula"
 
-class IsArm < Formula
+class Isarm < Formula
     homepage "https://github.com/meowmeowmeowcat/isarm"
     head "https://github.com/meowmeowmeowcat/isarm.git"
 
@@ -9,6 +9,6 @@ class IsArm < Formula
     end
 
     test do
-        system "isarm -v"
+        system "#{bin}/isarm"
     end
 end
