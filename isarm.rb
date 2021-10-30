@@ -1,7 +1,8 @@
 require "formula"
 
 class Isarm < Formula
-    homepage "https://github.com/meowmeowmeowcat/isarm"
+    homepage "https://github.com/meowmeowmeowcat/isarm",
+        branch: "main"
     head "https://github.com/meowmeowmeowcat/isarm.git"
 
     def install
