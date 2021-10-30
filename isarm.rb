@@ -2,6 +2,7 @@ require "formula"
 
 class Isarm < Formula
     homepage "https://github.com/meowmeowmeowcat/isarm",
+    url "https://github.com/meowmeowmeowcat/isarm.git",
         branch: "main"
     head "https://github.com/meowmeowmeowcat/isarm.git"
 
