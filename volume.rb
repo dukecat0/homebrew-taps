@@ -12,6 +12,6 @@ class Volume < Formula
     end
 
     test do
-        system "#{bin}/volume"
+        system "volume"
     end
 end
