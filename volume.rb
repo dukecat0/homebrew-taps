@@ -2,7 +2,7 @@ require "formula"
 
 class Volume < Formula
     homepage "https://github.com/meowmeowmeowcat/volume"
-    url "https://github.com/meowmeowmeowcat/volume/releases/download/v0.0.1/volume"
+    url "https://github.com/meowmeowmeowcat/volume/releases/download/v0.0.2/volume"
 
     def install
         bin.install "volume"
