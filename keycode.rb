@@ -11,7 +11,7 @@ class Keycode < Formula
   url "https://github.com/meowmeowmeowcat/keycode/releases/download/v0.0.1/keycode-#{arch}"
   
   def install
-    bin.install "keycode=#{arch}" => "keycode"
+    bin.install "keycode-#{arch}" => "keycode"
   end
   
   test do
