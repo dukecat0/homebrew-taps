@@ -11,6 +11,7 @@ class Keycode < Formula
   url "https://github.com/meowmeowmeowcat/keycode/releases/download/v0.0.1/keycode-#{arch}"
   
   def install
+    arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
     bin.install "keycode-#{arch}" => "keycode"
   end
   
