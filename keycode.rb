@@ -2,12 +2,10 @@ require "formula"
 
 class Keycode < Formula
   homepage "https://github.com/meowmeowmeowcat/keycode"
-  url "https://github.com/meowmeowmeowcat/keycode/archive/v0.0.1.tar.gz"
+  arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
+  url "https://github.com/meowmeowmeowcat/keycode/releases/download/v0.0.1/keycode-#{arch}"
   
   def install
-    Dir.mktmpdir do |tmpdir|
-      swift build -c release
-    end
     bin.install "keycode"
   end
   
