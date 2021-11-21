@@ -5,6 +5,9 @@ class Keycode < Formula
   url "https://github.com/meowmeowmeowcat/keycode/archive/v0.0.1.tar.gz"
   
   def install
+    Dir.mktmpdir do |tmpdir|
+      swift build -c release
+    end
     bin.install "keycode"
   end
   
